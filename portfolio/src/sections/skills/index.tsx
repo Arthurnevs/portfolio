@@ -1,12 +1,9 @@
 import React from 'react';
 import Card from '../../components/card/index.tsx';
-import { title } from 'process';
-import back from "../../assets/back.png"
-import front from "../../assets/front.png"
+import api from "../../assets/api.png";
+import front from "../../assets/front.png";
+import test from "../../assets/test.png";
 import code from "../../assets/code.png"
-import test from "../../assets/tests.png"
-import integration from "../../assets/integration.png"
-
 
 const Skills = () => {
 
@@ -19,7 +16,7 @@ const Skills = () => {
             height: "60px",
         },
         {
-            imgPath: back,
+            imgPath: code,
             title: "Back-End",
             description: "Desenvolvimento de API's robustas e eficientes que suportam aplicações escaláveis e seguras.",
             width: "60px",
@@ -33,10 +30,10 @@ const Skills = () => {
             height: "60px",
         },
         {
-            imgPath: integration,
+            imgPath: api,
             title: "Integração e APIs",
             description: "Conexão de diferentes sistemas e serviços para trabalhar em conjunto de maneira eficiente.",
-            width: "90px",
+            width: "60px",
             height: "60px",
         }
     ]
