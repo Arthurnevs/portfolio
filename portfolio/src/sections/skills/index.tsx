@@ -20,6 +20,7 @@ const Skills = () => {
 
     const cardsList = [
         {
+            id: 1,
             imgPath: front,
             title: "Front-End",
             description: "Development of dynamic and responsive interfaces that work seamlessly on any device.",
@@ -27,6 +28,7 @@ const Skills = () => {
             height: "60px",
         },
         {
+            id: 2,
             imgPath: code,
             title: "Back-End",
             description: "Development of robust and efficient APIs that support scalable and secure applications.",
@@ -34,6 +36,7 @@ const Skills = () => {
             height: "60px",
         },
         {
+            id: 3,
             imgPath: test,
             title: "Testing and Quality Assurance",
             description: "Implementation of unit, integration, and end-to-end tests to ensure software quality.",
@@ -41,6 +44,7 @@ const Skills = () => {
             height: "60px",
         },
         {
+            id: 4,
             imgPath: api,
             title: "Integration and APIs",
             description: "Connecting different systems and services to work together efficiently.",
@@ -69,14 +73,13 @@ const Skills = () => {
     };
 
     return (
-        <div>
-            {/* <p className='text-[#282938] font-semibold'> My Skills </p> */}
-            <h2 className='text-5xl font-bold my-6'> My Expertise </h2>
+        <div className='flex flex-col items-center lg:items-start'>
+            <h2 className='text-5xl font-bold my-6 '> My Expertise </h2>
             
-            <div className='flex flex-row gap-8'>
+            <div className='flex gap-8 flex-col lg:flex-row'>
                 {
                     cardsList.map((item, index) => (
-                        <Card imgPath={item.imgPath} title={item.title} description={item.description} width={item.width} height={item.height}/>
+                        <Card key={item.id} imgPath={item.imgPath} title={item.title} description={item.description} width={item.width} height={item.height}/>
                     ))
                 }
             </div>
