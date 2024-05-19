@@ -86,12 +86,12 @@ const Skills = () => {
             
             <p className='text-[#282938] font-semibold text-2xl mt-6'> Main Frameworks </p>
             <div className='grid grid-cols-6 mt-6 justify-between gap-6'>
-                <div className='col-span-2 grid grid-cols-3 w-full'>
+                <div className='col-span-6 grid grid-cols-3 w-full md:col-span-2'>
                         <Avatar imageSrc={django} knowledgePercentage={70} onMouseOver={() => handleAvatarHover(0)} height={"160px"} width={"160px"}/>
                         <Avatar imageSrc={reactImg} knowledgePercentage={40} onMouseOver={() => handleAvatarHover(1)} height={"160px"} width={"160px"}/>  
                         <Avatar imageSrc={node} knowledgePercentage={40} onMouseOver={() => handleAvatarHover(2)} height={"160px"} width={"160px"}/>
                 </div>
-                <div className='col-span-4 mt-6'>
+                <div className='col-span-6 mt-6 md:col-span-4'>
                     <div className='flex flex-col gap-4'>
                     <h2 className='text-4xl font-semibold'>
                         {activeFrameworks.name} 
