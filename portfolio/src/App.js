@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <div className='flex flex-col py-8 lg:px-56 gap-12 pt-32'>
+      <div className='flex flex-col py-8 px-8 lg:px-56 gap-12 pt-32'>
         <section> <HeroSection/> </section>
         <section> <Skills/> </section>
       </div>
